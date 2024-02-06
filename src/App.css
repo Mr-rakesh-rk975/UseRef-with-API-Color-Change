@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  padding: 0px 10px;
 }
 
 
@@ -17,6 +18,7 @@
 }
 .usedata-outer {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 20px; /* Adjust the gap between cards as needed */
 }
@@ -36,7 +38,9 @@
 }
 
 
-
+.hook-wrapper{
+  text-align: center;
+}
 .container {
   display: flex;
 }
