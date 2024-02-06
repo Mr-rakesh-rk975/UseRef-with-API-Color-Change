@@ -189,7 +189,7 @@ const changeInputColor = (e) => {
             ))}
             </div>
             {/* Assign the ref to the input element */}
-            <input ref={inputRef} value={color} type="text" onChange={changeInputColor} />
+            <input ref={inputRef} value={color} type="text" onChange={changeInputColor} id='glow-text-color-changer'/>
             {/* Button to trigger focusing the input and changing background color */}
             {/* <button onClick={focusInputAndChangeColor}>Focus Input and Change Color</button> */}
         </div>

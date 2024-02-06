@@ -4,8 +4,6 @@ import React, { useMemo, useState } from 'react';
 function ExpensiveCalculation({ value }) {
     // Memoize the result of the expensive calculation using useMemo
     const result = useMemo(() => {
-      // Perform the expensive calculation
-      console.log('Performing expensive calculation');
       return value * 2;
     }, [value]); // Recalculate only when the value changes
   

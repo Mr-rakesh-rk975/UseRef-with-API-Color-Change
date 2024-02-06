@@ -127,7 +127,7 @@
   text-align: left;
 }
 
-.useRef-outer input {
+.useRef-outer input#glow-text-color-changer{
   border-radius: 8px; 
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
   padding: 15px 30px; 
@@ -138,6 +138,6 @@
   transition: box-shadow 0.3s;
 }
 
-.useRef-outer input:hover {
+.useRef-outer input#glow-text-color-changer:hover {
   box-shadow: 0 0 5px red, 0 0 10px red, 0 0 15px red, 0 0 20px red, 0 0 35px red, 0 0 40px red, 0 0 50px red, 0 0 75px black, 0 0 100px black;
 }
