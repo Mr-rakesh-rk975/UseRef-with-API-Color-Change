@@ -86,6 +86,7 @@
 .container {
   perspective: 1000px;
   height: 550px;
+ 
 }
 
 .card {
@@ -98,6 +99,7 @@
 
 .card:hover {
   transform: rotateY(180deg);
+  
 }
 
 .card-front,
@@ -118,5 +120,9 @@
   transform: rotateY(180deg);
   height: 500px;
   overflow-y: auto;
+ 
 }
-
+.card-back .backside-para{
+  padding: 0px 20px;
+  text-align: left;
+}
