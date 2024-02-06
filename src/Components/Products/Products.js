@@ -17,10 +17,7 @@ function Products() {
     const inputRef = useRef(null);
     const  userRef = useRef(null)
 
-    const changeInputColor = (e) => {
-        setColor(e.target.value); // Update color state with the input value
-    };
-
+   
 
 // const focusInputAndChangeColor = () => {
 //     const inputElement = inputRef.current;
@@ -60,6 +57,40 @@ function Products() {
 
 
 
+// const focusInputAndChangeColor = () => {
+//     const inputElement = inputRef.current;
+//     inputElement.focus();
+//     const userElements = document.querySelectorAll('ul');
+
+//     const updateStyles = () => {
+//         const inputValue = inputElement.value.trim();
+//         const inputParts = inputValue.split('=');
+//         const userId = inputParts[0].trim();
+//         const color = inputParts[1] ? inputParts[1].trim() : '';
+
+//         userElements.forEach((userElement) => {
+//             const userIdFromList = userElement.querySelector('li:first-child').textContent;
+//             if (userId === userIdFromList) {
+//                 // If input matches user ID, apply color to the user element
+//                 userElement.style.backgroundColor = color;
+//                 userElement.style.color = 'white';
+//             } else {
+//                 // If input doesn't match, revert styles
+//                 userElement.style.backgroundColor = '';
+//                 userElement.style.color = '';
+//             }
+//         });
+//     };
+
+//     // Add an event listener for the input event to update styles
+//     inputElement.addEventListener('input', updateStyles);
+
+//     // Call updateStyles initially to update styles based on initial input value
+//     updateStyles();
+// };
+
+
+
 const focusInputAndChangeColor = () => {
     const inputElement = inputRef.current;
     inputElement.focus();
@@ -85,7 +116,7 @@ const focusInputAndChangeColor = () => {
         });
     };
 
-    // Add an event listener for the input event to update styles
+    // Add an event listener for the input event to update styles immediately
     inputElement.addEventListener('input', updateStyles);
 
     // Call updateStyles initially to update styles based on initial input value
@@ -93,9 +124,38 @@ const focusInputAndChangeColor = () => {
 };
 
 
+const changeInputColor = (e) => {
+    setColor(e.target.value); // Update color state with the input value
+    const inputElement = inputRef.current;
+    inputElement.focus();
+    const userElements = document.querySelectorAll('ul');
 
+    const updateStyles = () => {
+        const inputValue = inputElement.value.trim();
+        const inputParts = inputValue.split('=');
+        const userId = inputParts[0].trim();
+        const color = inputParts[1] ? inputParts[1].trim() : '';
 
+        userElements.forEach((userElement) => {
+            const userIdFromList = userElement.querySelector('li:first-child').textContent;
+            if (userId === userIdFromList) {
+                // If input matches user ID, apply color to the user element
+                userElement.style.backgroundColor = color;
+                userElement.style.color = 'white';
+            } else {
+                // If input doesn't match, revert styles
+                userElement.style.backgroundColor = '';
+                userElement.style.color = '';
+            }
+        });
+    };
 
+    // Add an event listener for the input event to update styles immediately
+    inputElement.addEventListener('input', updateStyles);
+
+    // Call updateStyles initially to update styles based on initial input value
+    updateStyles();
+};
 
 
 
