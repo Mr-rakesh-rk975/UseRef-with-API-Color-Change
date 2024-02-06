@@ -178,7 +178,7 @@ const changeInputColor = (e) => {
     }, []);
 
     return (
-        <div>
+        <div className='useRef-outer'>
             <h1>Users</h1>
             <div className='usedata-outer'>
             {users.map((user, index) => (
