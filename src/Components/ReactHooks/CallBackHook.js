@@ -114,7 +114,7 @@ function CallBackHook() {
     <>
       <div className="container">
       <div className="card">
-        <div className="card-front-outer">
+        
         <div className="card-front">
         <div className="code-box">
           <h3>Code</h3>
@@ -153,15 +153,15 @@ export default CallBackHook;
           </div>
         </div>
       </div>
-      </div>
-      <div className="card-back-outer">
+      
+      
       <div className="card-back">
           {/* Back content */}
           <h2>Back Content</h2>
           <p>This is the back side of the container.</p>
           <p>Explanation goes here...</p>
         </div>
-        </div>
+        
       </div>
       </div>
     </>
