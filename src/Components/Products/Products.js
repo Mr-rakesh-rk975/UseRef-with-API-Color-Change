@@ -178,12 +178,14 @@ const changeInputColor = (e) => {
     return (
         <div>
             <h1>Users</h1>
+            <div className='usedata-outer'>
             {users.map((user, index) => (
-                <ul key={index} ref={userRef}>
+                <ul key={index} ref={userRef} className='usedata-inner'> 
                     <li>{user.id}</li>
                     <li>{user.username}</li>
                 </ul>
             ))}
+            </div>
             {/* Assign the ref to the input element */}
             <input ref={inputRef} value={color} type="text" onChange={changeInputColor} />
             {/* Button to trigger focusing the input and changing background color */}

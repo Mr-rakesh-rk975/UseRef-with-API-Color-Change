@@ -15,3 +15,22 @@
     transform: rotate(360deg);
   }
 }
+.usedata-outer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Adjust the gap between cards as needed */
+}
+
+.usedata-inner {
+  background-color: #f0f0f0; /* Background color of the card */
+  border-radius: 8px; /* Border radius for rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
+  padding: 20px; /* Padding inside the card */
+  width: calc(33.33% - 20px); /* Adjust the width of each card */
+  max-width: 300px; /* Maximum width of each card */
+}
+
+/* Additional styling for list items if needed */
+.usedata-inner li {
+  margin-bottom: 10px; /* Adjust the spacing between list items */
+}
