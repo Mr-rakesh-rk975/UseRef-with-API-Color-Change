@@ -1,7 +1,9 @@
 import React, { useEffect, useState, useRef } from 'react';
 
-function Products() {
-    const [users, setUsers] = useState([]);
+
+function RefHook() {
+
+   const [users, setUsers] = useState([]);
     const [color, setColor] = useState('');
 
     const fetchUsers = async () => {
@@ -191,7 +193,7 @@ const changeInputColor = (e) => {
             {/* Button to trigger focusing the input and changing background color */}
             {/* <button onClick={focusInputAndChangeColor}>Focus Input and Change Color</button> */}
         </div>
-    );
+  )
 }
 
-export default Products;
+export default RefHook;

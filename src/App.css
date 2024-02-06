@@ -34,3 +34,59 @@
 .usedata-inner li {
   margin-bottom: 10px; /* Adjust the spacing between list items */
 }
+
+
+
+.container {
+  display: flex;
+}
+
+.code-box {
+  flex: 1;
+  background-color: #333; /* Light black background color */
+  padding: 20px;
+  border-radius: 5px;
+  color: #ddd; /* Light gray text color for code */
+}
+
+.code-box h3 {
+  margin-top: 0;
+  color: #fff; /* White color for heading text */
+}
+
+.code-box pre {
+  margin: 0;
+  white-space: pre-wrap;
+}
+
+.result-box {
+  flex: 1;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: #f5f5f5; /* Light gray background color */
+}
+
+.result-box h3 {
+  margin-top: 0;
+}
+
+.card{
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+
+.card-front-outer{
+  position: relative;
+ height: 500px;
+ 
+
+}
+.card-front{
+  display: flex;
+  width: 100%;
+  height: auto;
+  position: absolute;
+}
+

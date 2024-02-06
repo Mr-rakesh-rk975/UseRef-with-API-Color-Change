@@ -1,3 +1,35 @@
+
+
+
+
+
+
+what is use useRef?
+The useRef hook in React is primarily used for accessing and interacting with DOM elements directly. Here are some main use cases for useRef:
+
+Accessing DOM Elements: You can create a ref using useRef and attach it to a JSX element with the ref attribute. This allows you to directly access and manipulate the corresponding DOM element.
+
+Managing Focus: You can use useRef to manage focus within your components. For example, you can programmatically focus an input field or any other DOM element when certain conditions are met.
+
+Storing Mutable Values: Unlike useState, the value of a ref persists across component re-renders without causing a re-render itself. This makes useRef useful for storing mutable values that don't trigger re-renders.
+
+Caching Values: You can use useRef to cache values between renders. This is particularly useful for values that you don't want to trigger re-renders but still need to be accessed across renders.
+
+Interacting with Third-Party Libraries: When integrating React with third-party libraries that require direct access to DOM elements, useRef can be used to provide references to those elements.
+
+Synchronizing State and Effects: useRef can be used to access state or props within event handlers or asynchronous callbacks without causing re-renders. This can be useful for synchronizing state and effects in event listeners or other imperative code.
+
+Overall, useRef is a versatile hook that provides a way to work with and interact with DOM elements and values in a way that's consistent with React's functional programming paradigm.
+
+
+
+
+
+
+
+
+
+
 let's break down the code step by step:
 
 Function Setup:........................

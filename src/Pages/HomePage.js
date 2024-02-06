@@ -1,5 +1,5 @@
 import React from 'react'
-import Products from '../Components/Products/Products'
+import Products from '../Components/ReactHooks/Hooks'
 
 function HomePage() {
   return (
