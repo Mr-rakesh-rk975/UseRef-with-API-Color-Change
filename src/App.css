@@ -149,6 +149,7 @@
   display: flex;
   justify-self: center;
   flex-direction: column;
+ 
 }
 .react-hooks-tables table {
 text-align: left;
@@ -164,6 +165,7 @@ margin: auto;
 .react-hooks-tables .hooks-heading{
   color: #333;
   font-weight: bold;
+  vertical-align: middle;
 }
 .react-hooks-tables table th{
   text-align: center;
@@ -176,4 +178,13 @@ margin: auto;
   font-weight: bold;
   font-size: 18px;
   margin: 0px;
+}
+
+/* table {
+  border-collapse: collapse; 
+} */
+
+td {
+  vertical-align: top; /* Align content to the top of each cell */
+  margin-top: 20px;
 }
