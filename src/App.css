@@ -1,3 +1,5 @@
+
+
 .App {
   text-align: center;
   padding: 0px 10px;
@@ -169,4 +171,9 @@ margin: auto;
 .react-hooks-tables table tr,td{
   border: 1px solid;
   padding-left: 20px;
+}
+.react-hooks-tables h2{
+  font-weight: bold;
+  font-size: 18px;
+  margin: 0px;
 }

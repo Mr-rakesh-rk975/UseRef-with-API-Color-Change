@@ -1,6 +1,27 @@
-import React from 'react';
+import React,{useState,useEffect} from 'react';
 
 function AllHooks() {
+
+  const [count, setCount] = useState(0);
+            
+  // This useEffect runs after every render
+  useEffect(() => {
+      console.log("Component has been rendered");
+  });
+
+  // This useEffect runs only on mount
+  useEffect(() => {
+      console.log("Component has mounted");
+  }, []);
+
+  // This useEffect runs only when count changes
+  useEffect(() => {
+      console.log("Count has changed:", count);
+  }, [count]);
+
+
+
+
   return (
     <>
     <div className='react-hooks-tables'>
@@ -22,7 +43,38 @@ function AllHooks() {
           <tr>
             <td className='hooks-heading'>useEffect</td>
             <td>Performs side effects in functional components</td>
-            <td>{`useEffect(() => { console.log('Mounted'); }, []);`}</td>
+            <td> <pre> <h2>Code:...</h2>{`import React, { useState, useEffect } from 'react';
+             function MyComponent() {
+                const [count, setCount] = useState(0);
+            
+                // This useEffect runs after every render
+                useEffect(() => {
+                    console.log("Component has been rendered");
+                });
+            
+                // This useEffect runs only on mount
+                useEffect(() => {
+                    console.log("Component has mounted");
+                }, []);
+            
+                // This useEffect runs only when count changes
+                useEffect(() => {
+                    console.log("Count has changed:", count);
+                }, [count]);
+            
+                return (
+                    <div>
+                        <p>Count: {count}</p>
+                        <button onClick={() => setCount(count + 1)}>Increment Count</button>
+                    </div>
+                );
+            }
+            
+            `} <div>
+              <h2>Result:...</h2>
+            <p>Count: <b style={{color:'red', fontSize: '20px', fontWeight: 'bold'}}>{count}</b> </p>
+            <button onClick={() => setCount(count + 1)}>Increment Count</button>
+        </div></pre></td>
           </tr>
           <tr>
             <td className='hooks-heading'>useContext</td>
