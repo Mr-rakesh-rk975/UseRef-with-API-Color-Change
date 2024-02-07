@@ -89,6 +89,7 @@ function AllHooks() {
                   <h2>Result:...</h2>
                   <p>Count: <b style={{ color: 'red', fontSize: '20px', fontWeight: 'bold' }}>{count}</b> </p>
                   <button onClick={() => setCount(count + 1)}>Increment Count</button>
+            <button onClick={() => setCount(0)}>Reset Count</button>
                 </div></pre></td>
             </tr>
             <tr>
