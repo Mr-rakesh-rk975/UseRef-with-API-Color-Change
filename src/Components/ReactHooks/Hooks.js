@@ -3,6 +3,7 @@ import RefHook from './RefHook'
 import CallBackHook from './CallBackHook'
 import ReducerHook from './ReducerHook'
 import MemoHook from './MemoHook'
+import AllHooks from './AllHooks'
 
 
 
@@ -10,6 +11,10 @@ export default function Hooks() {
   return (
     <>
     <div className='react-hooks-outer'>
+    <div className='hook-wrapper'> 
+      <h1>Hooks</h1>
+      <AllHooks/>
+      </div>
         <div className='hook-wrapper'> 
     <h1>useRef Hook</h1>
       <RefHook/>
